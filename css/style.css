@@ -7,16 +7,19 @@
 
 body {
     background-color: #433D3D;
-    font-size: 30;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+
 }
 
 .container {
   margin: auto;
   width: 375px;
-  height: 667px;
-}
+  height:667px;
 
+}
 
 .status-bar {
     position:fixed;
@@ -24,22 +27,40 @@ body {
 
 }
 
+.back {
+  float:left;
+  margin-top:17px;
+}
+
+
+.title {
+  float:right;
+  margin-top:20px;
+  margin-right:80px;
+  font-size: 17px;
+  font-weight: 200;
+
+}
+
+.nav-bar {
+  position:fixed;
+  width: 375px;
+  margin-top:44px;
+  padding:10px;
+  background-color: #070E46;
+  font-size: 1.3em;
+  height:64px;
+
+}
+
+
 .map {
   margin-top: 108px;
   vertical-align: bottom;
 
 }
 
-.station-title {
-  width: 375px;
-  padding:10px;
-  text-align: center;
-  background-color: #007AFF;
-  font-size: 1.3em;
-
-}
-
-.bus-line {
+ul li {
 
     width: 375px;
     background-color: #000000;
@@ -49,9 +70,10 @@ body {
     vertical-align: bottom;
     box-sizing: border-box;
 
+
 }
 
-.eastbound-bus {
+.bus-number {
 
     float: left;
     background-color: #151FFF;
@@ -72,79 +94,94 @@ body {
 
 .eta {
     float: right;
-    margin-right: 17px;
+    margin-top: 14px;
+    margin-right: 25px;
     text-align: center;
     line-height: 33px;
+    font-weight: bold;
 }
 
-
-.frequency {
-    text-align: left;
-    margin-top: 15px;
-    margin-left: 19px;
-    padding-bottom: 10px;
-
-}
-
-.location {
-    text-align: left;
-    margin-top: 5px;
-    margin-left: 19px;
+.eta-single {
+  padding-right: 35px;
+  margin-top: 10px;
+  text-align: center;
+  float: right;
+  font-weight: bold;
 
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 2.5em;
-
+.no-eta {
+  float: right;
+  margin-right: 38px;
+  margin-top: 28px;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 1em;
+    font-size:20px;
 }
 
-h3 {
+
+.frequency {
+    display: block;
+    margin-top: 12px;
+    margin-left: 19px;
+    padding-bottom: 5px;
+    font-weight:bold;
+    font-size:17px;
+
+}
+
+.location {
+    display: inline-block;
+    margin-left: 19px;
+    margin-top: 5px;
+
+}
+
+h1 {
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: .9em;
-    font-weight: 300;
+    font-size: 2.7em;
 
 }
 
-
-
-.northbound-bus {
-    float: left;
-    background-color: #7B0FFF;
-    padding: 6px 15px 5px 15px;
-    text-align: center;
-    margin-left: 17px;
-
-
-}
-
-.southbound-bus {
-    float: left;
-    background-color: #E07F00;
-    padding: 6px 15px 5px 15px;
-    text-align: center;
-    margin-left: 17px;
-
-}
-
-.reroute-bus {
-    float: left;
-    background-color: #676767;
-    padding: 6px 15px 5px 15px;
-    text-align: center;
-    margin-left: 17px;
-
-}
 .tab-bar {
+  width:375px;
+  height:83px;
   position:relative;
+  vertical-align: bottom;
+  background-color: #070E46;
+
+}
+
+.arrow {
+  float:left;
+  margin-left:25px;
+  margin-top:20px;
+
+}
+
+.search {
+  position:relative;
+  margin-left: 140px;
+  margin-top:20px;
+
+}
+
+.button {
+  float:right;
+  margin-top:15px;
+  margin-right:25px;
+}
+
+.Home {
+  position:relative;
+  margin-top: 18px;
+  margin-left: 125px;
 
 }
